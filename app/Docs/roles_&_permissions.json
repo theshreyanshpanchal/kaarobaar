@@ -1,0 +1,34 @@
+{
+    "role_groups": [
+        {
+            "display": "Administrator",
+            "name": "administrator",
+            "description": ""
+        }
+    ],
+    "permissions": [
+        {
+            "display": "View Profile",
+            "name": "view-profile",
+            "description": "Allows the user to view their own profile information, including personal details and account settings."
+        },
+        {
+            "display": "Access Dashboard",
+            "name": "dashboard",
+            "description": "Grants access to the dashboard where users can view and manage resources.",
+            "system_default": true
+        }
+    ],
+    "roles": [
+        {
+            "display": "Super Admin",
+            "name": "super-admin",
+            "description": "The Super Admin has the highest level of access and control over the entire system, including managing users, configuring settings, and overseeing all operations.",
+            "role_group": "administrator",
+            "permissions": [
+                "view-profile",
+                "dashboard"
+            ]
+        }
+    ]
+}
